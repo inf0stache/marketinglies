@@ -1,6 +1,6 @@
 # data/
 
-The catalog of marketing lies.
+The catalog of security marketing lies.
 
 ## Files
 
@@ -12,8 +12,8 @@ Each entry in `lies.json` is an object with these fields:
 
 | field | type | required | description |
 | --- | --- | --- | --- |
-| `claim` | string | yes | The marketing claim, copied faithfully. |
-| `source_url` | string | yes | A URL where the claim appears. |
+| `claim` | string | yes | The security/compliance claim, copied faithfully. |
+| `source_url` | string | yes | A URL where the claim appears (trust center, landing page, etc.). |
 | `control_family` | string | yes | One of `QN`, `CP`, `CR`, `CA`, `SO`, `TS`. |
 | `vibes_rating` | integer 1–5 | yes | 1 = mild fib, 5 = unhinged whopper. |
 | `notes` | string | no | Context, evidence, or commentary. |
@@ -23,11 +23,11 @@ Each entry in `lies.json` is an object with these fields:
 ```json
 [
   {
-    "claim": "9 out of 10 dentists recommend this",
-    "source_url": "https://example.com/toothpaste-landing",
-    "control_family": "QN",
+    "claim": "SOC 2 Type II compliant",
+    "source_url": "https://example.com/trust",
+    "control_family": "CR",
     "vibes_rating": 4,
-    "notes": "The cited survey sampled 12 dentists, all employed by the manufacturer's parent company."
+    "notes": "Report dated 2022. Scope was a single marketing landing page, not the actual product. Sold on the homepage as 'enterprise-grade trust.'"
   }
 ]
 ```
