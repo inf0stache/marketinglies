@@ -1,10 +1,10 @@
 # Contributing to MarketingLies
 
-Thanks for helping document the wild claims cybersecurity marketing teams commit to the public web.
+Thanks for helping keep the stamp ridiculous and the joke pointed at the claims.
 
-## Adding a lie
+## Adding a stamp-worthy claim
 
-Lies live in `data/lies.json` as a flat JSON array. Each entry is an object with the following fields:
+If you want to add examples for the static catalog, they live in `data/lies.json` as a flat JSON array. Each entry is an object with the following fields:
 
 ```json
 {
@@ -32,4 +32,4 @@ Field details:
 
 ## Code of conduct
 
-Be cool. Don't dox anyone. The satire targets the *claim*, not the human who wrote it — most of the time a marketer was handed a feature list and told to make it sound trustworthy. If a claim mentions a specific named individual, think twice before submitting. If the individual *is* the claim (a founder personally vouching for their security posture, an exec making a public claim about their stack on stage), that's fair game.
+Be cool. Don't dox anyone. The satire targets the *claim*, not the human who wrote it — most of the time a marketer was handed a feature list and told to make it sound trustworthy. If a claim mentions a specific named individual, think twice before adding it. If the individual *is* the claim (a founder personally vouching for their security posture, an exec making a public claim about their stack on stage), that's fair game.
