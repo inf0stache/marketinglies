@@ -1,6 +1,6 @@
 # data/
 
-The catalog of security marketing lies.
+The catalog of cybersecurity marketing lies.
 
 ## Files
 
@@ -12,22 +12,22 @@ Each entry in `lies.json` is an object with these fields:
 
 | field | type | required | description |
 | --- | --- | --- | --- |
-| `claim` | string | yes | The security/compliance claim, copied faithfully. |
-| `source_url` | string | yes | A URL where the claim appears (trust center, landing page, etc.). |
+| `claim` | string | yes | The security claim, copied faithfully. |
+| `source_url` | string | yes | A URL where the claim appears. |
 | `control_family` | string | yes | One of `QN`, `CP`, `CR`, `CA`, `SO`, `TS`. |
 | `vibes_rating` | integer 1–5 | yes | 1 = mild fib, 5 = unhinged whopper. |
-| `notes` | string | no | Context, evidence, or commentary. |
+| `notes` | string | no | Context, evidence gaps, or commentary. |
 
 ## Example entry
 
 ```json
 [
   {
-    "claim": "SOC 2 Type II compliant",
-    "source_url": "https://example.com/trust",
-    "control_family": "CR",
+    "claim": "AI-powered threat detection blocks 99.9% of attacks",
+    "source_url": "https://example.com/product",
+    "control_family": "CA",
     "vibes_rating": 4,
-    "notes": "Report dated 2022. Scope was a single marketing landing page, not the actual product. Sold on the homepage as 'enterprise-grade trust.'"
+    "notes": "The 'AI' is a regex with a system prompt. The 99.9% is unsourced. The 0.1% is doing all the work."
   }
 ]
 ```
